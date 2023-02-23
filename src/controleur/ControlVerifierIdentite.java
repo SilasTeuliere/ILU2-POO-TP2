@@ -10,7 +10,15 @@ public class ControlVerifierIdentite {
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		//TODO a completer, attention le retour ne dit pas etre false :-)
-		return false;
+		boolean verifVal = false;
+		village.trouverHabitant(nomVendeur);
+		String nomChef = village.getNom();
+		if(nomVendeur.equals(nomChef)) {
+			verifVal = true;
+		}
+		else {
+			
+		}
+		return verifVal;
 	}
 }
