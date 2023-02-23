@@ -11,14 +11,10 @@ public class ControlVerifierIdentite {
 
 	public boolean verifierIdentite(String nomVendeur) {
 		boolean verifVal = false;
-		village.trouverHabitant(nomVendeur);
-		String nomChef = village.getNom();
-		if(nomVendeur.equals(nomChef)) {
+		if(village.trouverHabitant(nomVendeur) != null )
 			verifVal = true;
-		}
-		else {
-			
-		}
+		else
+			verifVal = false;
 		return verifVal;
 	}
 }
