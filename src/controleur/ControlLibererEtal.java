@@ -8,7 +8,15 @@ public class ControlLibererEtal {
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 	}
 
-	//TODO a completer
+	boolean isVendeur(String nomVendeur) {
+		boolean vendeurReconnu = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null;
+		if(!vendeurReconnu) {
+			System.out.println("Mais vous n'etes pas inscrit sur notre marché aujourd'hui !");
+		}
+		else {
+			libererEtal
+		}
+	}
 
 	/**
 	 * 
@@ -19,7 +27,7 @@ public class ControlLibererEtal {
 	 *         quantitÃ© de produit vendu
 	 */
 	public String[] libererEtal(String nomVendeur) {
-		//TODO a completer
+		
 		String[] donneesEtal = null;
 		return donneesEtal;
 	}
