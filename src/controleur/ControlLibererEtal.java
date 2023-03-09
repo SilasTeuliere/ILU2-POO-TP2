@@ -8,14 +8,8 @@ public class ControlLibererEtal {
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 	}
 
-	boolean isVendeur(String nomVendeur) {
-		boolean vendeurReconnu = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null;
-		if(!vendeurReconnu) {
-			System.out.println("Mais vous n'etes pas inscrit sur notre marché aujourd'hui !");
-		}
-		else {
-			libererEtal
-		}
+	public boolean isVendeur(String nomVendeur) {
+		return controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null;
 	}
 
 	/**
