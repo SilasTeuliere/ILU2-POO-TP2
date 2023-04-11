@@ -19,5 +19,5 @@ public class ControlAfficherVillage {
 
 	public int donnerNbEtals() {
 		return village.donnerNbEtal();
-	}
+	} 
 }
